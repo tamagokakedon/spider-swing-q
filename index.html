@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider Swing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="startScreen" class="overlay">
+            <h1>Spider Swing</h1>
+            <p>スペースキーを押してゲームを開始</p>
+            <p class="instructions">
+                操作方法:<br>
+                - マウス左クリック: 糸を発射・維持<br>
+                - 上キー: 糸を上る<br>
+                - 下キー: 糸を下る
+            </p>
+        </div>
+        <div id="gameOverScreen" class="overlay hidden">
+            <h1>ゲームオーバー</h1>
+            <p id="finalScore">スコア: 0</p>
+            <button id="restartButton">もう一度プレイ</button>
+        </div>
+        <div id="scoreDisplay">スコア: <span id="score">0</span></div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
